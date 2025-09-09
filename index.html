@@ -95,12 +95,22 @@
         
         .product-image {
             height: 200px;
-            background-color: var(--secondary-color);
             display: flex;
             align-items: center;
             justify-content: center;
-            color: var(--accent-color);
-            font-size: 1.5rem;
+            overflow: hidden;
+            background-color: #fafafa;
+        }
+        
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .product-card:hover .product-image img {
+            transform: scale(1.05);
         }
         
         .product-info {
@@ -195,104 +205,143 @@
         </section>
         
         <section class="product-grid">
+            <!-- PRODUCT 1: Skin Toning Oil -->
             <div class="product-card">
-                <div class="product-image">Product Image</div>
+                <div class="product-image">
+                    <img src="https://i.ibb.co/b5wYg7D4/pink-lemon-skin-toning-oil.jpg" alt="Pink Lemon Skin Toning Oil">
+                </div>
                 <div class="product-info">
                     <h3 class="product-name">Pink Lemon Skin Toning Oil</h3>
                     <p class="product-description">Restores your skin's natural balance and improves elasticity for a toned appearance.</p>
                 </div>
             </div>
             
+            <!-- PRODUCT 2: Skin Lightening Cream -->
             <div class="product-card">
-                <div class="product-image">Product Image</div>
+                <div class="product-image">
+                    <img src="https://i.ibb.co/35jkthvF/pink-lemon-skin-lightening-cream.jpg" alt="Pink Lemon Skin Lightening Cream">
+                </div>
                 <div class="product-info">
                     <h3 class="product-name">Pink Lemon Skin Lightening Cream</h3>
                     <p class="product-description">Gently brightens and evens skin tone for a naturally radiant complexion.</p>
                 </div>
             </div>
             
+            <!-- PRODUCT 3: Skin Whitening Soap -->
             <div class="product-card">
-                <div class="product-image">Product Image</div>
+                <div class="product-image">
+                    <img src="https://i.ibb.co/tPptYWNb/pink-lemon-skin-whitening-soap.jpg" alt="Pink Lemon Skin Whitening Soap">
+                </div>
                 <div class="product-info">
                     <h3 class="product-name">Pink Lemon Skin Whitening Soap</h3>
                     <p class="product-description">Daily cleansing formula that gently brightens while maintaining skin's moisture.</p>
                 </div>
             </div>
             
+            <!-- PRODUCT 4: Anti-Aging Pills -->
             <div class="product-card">
-                <div class="product-image">Product Image</div>
+                <div class="product-image">
+                    <img src="https://i.ibb.co/LB5tT8k/pink-lemon-anti-aging-pills.jpg" alt="Pink Lemon Anti-Aging Pills">
+                </div>
                 <div class="product-info">
                     <h3 class="product-name">Pink Lemon Anti-Aging Pills</h3>
                     <p class="product-description">Nutritional supplement that supports skin health from within for a youthful glow.</p>
                 </div>
             </div>
             
+            <!-- PRODUCT 5: Revitalizing Face Serum -->
             <div class="product-card">
-                <div class="product-image">Product Image</div>
+                <div class="product-image">
+                    <img src="https://i.ibb.co/LD5L5VP1/pink-lemon-revitalizing-face-serum.jpg" alt="Pink Lemon Revitalizing Face Serum">
+                </div>
                 <div class="product-info">
                     <h3 class="product-name">Pink Lemon Revitalizing Face Serum</h3>
                     <p class="product-description">Potent antioxidant formula that fights free radicals and rejuvenates skin.</p>
                 </div>
             </div>
             
+            <!-- PRODUCT 6: Hydrating Face Mask -->
             <div class="product-card">
-                <div class="product-image">Product Image</div>
+                <div class="product-image">
+                    <img src="https://i.ibb.co/4ZBnBT9S/pink-lemon-hydrating-face-mask.jpg" alt="Pink Lemon Hydrating Face Mask">
+                </div>
                 <div class="product-info">
                     <h3 class="product-name">Pink Lemon Hydrating Face Mask</h3>
                     <p class="product-description">Deeply nourishing treatment that replenishes moisture for dewy, supple skin.</p>
                 </div>
             </div>
             
+            <!-- PRODUCT 7: Dark Spot Corrector -->
             <div class="product-card">
-                <div class="product-image">Product Image</div>
+                <div class="product-image">
+                    <img src="https://i.ibb.co/nsTPtXst/pink-lemon-dark-spot-corrector.jpg" alt="Pink Lemon Dark Spot Corrector">
+                </div>
                 <div class="product-info">
                     <h3 class="product-name">Pink Lemon Dark Spot Corrector</h3>
                     <p class="product-description">Targeted treatment that reduces the appearance of hyperpigmentation and dark spots.</p>
                 </div>
             </div>
             
+            <!-- PRODUCT 8: Eye Renewal Cream -->
             <div class="product-card">
-                <div class="product-image">Product Image</div>
+                <div class="product-image">
+                    <img src="https://i.ibb.co/MkCpDw4j/pink-lemon-eye-renewal-cream.jpg" alt="Pink Lemon Eye Renewal Cream">
+                </div>
                 <div class="product-info">
                     <h3 class="product-name">Pink Lemon Eye Renewal Cream</h3>
                     <p class="product-description">Specialized formula that diminishes dark circles and reduces puffiness around eyes.</p>
                 </div>
             </div>
             
+            <!-- PRODUCT 9: Exfoliating Scrub -->
             <div class="product-card">
-                <div class="product-image">Product Image</div>
+                <div class="product-image">
+                    <img src="https://i.ibb.co/KcRVTtCG/pink-lemon-exfoliating-scrub.jpg" alt="Pink Lemon Exfoliating Scrub">
+                </div>
                 <div class="product-info">
                     <h3 class="product-name">Pink Lemon Exfoliating Scrub</h3>
                     <p class="product-description">Gentle exfoliator that removes dead skin cells to reveal brighter, smoother skin.</p>
                 </div>
             </div>
             
+            <!-- PRODUCT 10: Overnight Repair Cream -->
             <div class="product-card">
-                <div class="product-image">Product Image</div>
+                <div class="product-image">
+                    <img src="https://i.ibb.co/7dygyQvV/pink-lemon-overnight-repair-cream.jpg" alt="Pink Lemon Overnight Repair Cream">
+                </div>
                 <div class="product-info">
                     <h3 class="product-name">Pink Lemon Overnight Repair Cream</h3>
                     <p class="product-description">Intensive nighttime treatment that works while you sleep to regenerate skin.</p>
                 </div>
             </div>
             
+            <!-- PRODUCT 11: Skin Brightening Toner -->
             <div class="product-card">
-                <div class="product-image">Product Image</div>
+                <div class="product-image">
+                    <img src="https://i.ibb.co/TqFzDsXC/pink-lemon-skin-brightening-toner.jpg" alt="Pink Lemon Skin Brightening Toner">
+                </div>
                 <div class="product-info">
                     <h3 class="product-name">Pink Lemon Skin Brightening Toner</h3>
                     <p class="product-description">Refreshing toner that balances pH levels and prepares skin for better absorption.</p>
                 </div>
             </div>
             
+            <!-- PRODUCT 12: Collagen Booster -->
             <div class="product-card">
-                <div class="product-image">Product Image</div>
+                <div class="product-image">
+                    <img src="https://i.ibb.co/M5Gm461c/pink-lemon-collagen-booster.jpg" alt="Pink Lemon Collagen Booster">
+                </div>
                 <div class="product-info">
-                    <h3 class="product-name">Pink Lemon collagen Booster</h3>
+                    <h3 class="product-name">Pink Lemon Collagen Booster</h3>
                     <p class="product-description">Advanced formula that stimulates collagen production for firmer, plumper skin.</p>
                 </div>
             </div>
             
+            <!-- PRODUCT 13: Protective Day Lotion -->
             <div class="product-card">
-                <div class="product-image">Product Image</div>
+                <div class="product-image">
+                    <img src="https://i.ibb.co/VpkBNTcw/pink-lemon-protective-day-lotion.jpg" alt="Pink Lemon Protective Day Lotion">
+                </div>
                 <div class="product-info">
                     <h3 class="product-name">Pink Lemon Protective Day Lotion</h3>
                     <p class="product-description">Daily moisturizer with SPF protection that hydrates while shielding from environmental damage.</p>
@@ -311,8 +360,8 @@
     
     <footer>
         <div class="container">
-            <p>© 2025 Pink Lemon Skincare. All rights reserved.</p>
+            <p>© 2023 Pink Lemon Skincare. All rights reserved.</p>
         </div>
     </footer>
 </body>
-</html>
+                </html>
