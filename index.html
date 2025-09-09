@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pink Lemon Skincare - Natural Beauty Products</title>
+    <style>
+        /* Global Styles */
+        :root {
+            --primary-color: #ffd1dc; /* Soft pink */
+            --secondary-color: #fff0f5; /* Light lavender blush */
+            --accent-color: #ffb6c1; /* Darker pink */
+            --text-color: #333333;
+            --light-text: #777777;
+            --white: #ffffff;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: var(--white);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            padding: 30px 0;
+            text-align: center;
+            border-bottom: 1px solid var(--accent-color);
+        }
+        
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--text-color);
+            margin-bottom: 10px;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            color: var(--light-text);
+            margin-bottom: 20px;
+        }
+        
+        /* Product Grid Styles */
+        .products-header {
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .products-title {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: var(--text-color);
+        }
+        
+        .products-subtitle {
+            color: var(--light-text);
+            margin-bottom: 30px;
+        }
+        
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        
+        .product-card {
+            background: var(--white);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .product-image {
+            height: 200px;
+            background-color: var(--secondary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent-color);
+            font-size: 1.5rem;
+        }
+        
+        .product-info {
+            padding: 20px;
+        }
+        
+        .product-name {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: var(--text-color);
+        }
+        
+        .product-description {
+            color: var(--light-text);
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+        
+        /* WhatsApp Button Styles */
+        .whatsapp-section {
+            text-align: center;
+            padding: 40px 0;
+            background-color: var(--secondary-color);
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+        
+        .whatsapp-title {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--text-color);
+        }
+        
+        .whatsapp-button {
+            display: inline-block;
+            background-color: #25D366;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 10px rgba(37, 211, 102, 0.4);
+        }
+        
+        .whatsapp-button:hover {
+            background-color: #128C7E;
+            transform: scale(1.05);
+        }
+        
+        /* Footer Styles */
+        footer {
+            background-color: var(--primary-color);
+            padding: 20px 0;
+            text-align: center;
+            color: var(--light-text);
+            font-size: 0.9rem;
+            margin-top: 50px;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .product-grid {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+            
+            .logo {
+                font-size: 2rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Pink Lemon Skincare</div>
+            <div class="tagline">Natural Radiance, Beautiful Results</div>
+        </div>
+    </header>
+    
+    <main class="container">
+        <section class="products-header">
+            <h2 class="products-title">Our Premium Product Range</h2>
+            <p class="products-subtitle">Discover our natural skincare solutions for a radiant, youthful complexion</p>
+        </section>
+        
+        <section class="product-grid">
+            <div class="product-card">
+                <div class="product-image">Product Image</div>
+                <div class="product-info">
+                    <h3 class="product-name">Pink Lemon Skin Toning Oil</h3>
+                    <p class="product-description">Restores your skin's natural balance and improves elasticity for a toned appearance.</p>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">Product Image</div>
+                <div class="product-info">
+                    <h3 class="product-name">Pink Lemon Skin Lightening Cream</h3>
+                    <p class="product-description">Gently brightens and evens skin tone for a naturally radiant complexion.</p>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">Product Image</div>
+                <div class="product-info">
+                    <h3 class="product-name">Pink Lemon Skin Whitening Soap</h3>
+                    <p class="product-description">Daily cleansing formula that gently brightens while maintaining skin's moisture.</p>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">Product Image</div>
+                <div class="product-info">
+                    <h3 class="product-name">Pink Lemon Anti-Aging Pills</h3>
+                    <p class="product-description">Nutritional supplement that supports skin health from within for a youthful glow.</p>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">Product Image</div>
+                <div class="product-info">
+                    <h3 class="product-name">Pink Lemon Revitalizing Face Serum</h3>
+                    <p class="product-description">Potent antioxidant formula that fights free radicals and rejuvenates skin.</p>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">Product Image</div>
+                <div class="product-info">
+                    <h3 class="product-name">Pink Lemon Hydrating Face Mask</h3>
+                    <p class="product-description">Deeply nourishing treatment that replenishes moisture for dewy, supple skin.</p>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">Product Image</div>
+                <div class="product-info">
+                    <h3 class="product-name">Pink Lemon Dark Spot Corrector</h3>
+                    <p class="product-description">Targeted treatment that reduces the appearance of hyperpigmentation and dark spots.</p>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">Product Image</div>
+                <div class="product-info">
+                    <h3 class="product-name">Pink Lemon Eye Renewal Cream</h3>
+                    <p class="product-description">Specialized formula that diminishes dark circles and reduces puffiness around eyes.</p>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">Product Image</div>
+                <div class="product-info">
+                    <h3 class="product-name">Pink Lemon Exfoliating Scrub</h3>
+                    <p class="product-description">Gentle exfoliator that removes dead skin cells to reveal brighter, smoother skin.</p>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">Product Image</div>
+                <div class="product-info">
+                    <h3 class="product-name">Pink Lemon Overnight Repair Cream</h3>
+                    <p class="product-description">Intensive nighttime treatment that works while you sleep to regenerate skin.</p>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">Product Image</div>
+                <div class="product-info">
+                    <h3 class="product-name">Pink Lemon Skin Brightening Toner</h3>
+                    <p class="product-description">Refreshing toner that balances pH levels and prepares skin for better absorption.</p>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">Product Image</div>
+                <div class="product-info">
+                    <h3 class="product-name">Pink Lemon collagen Booster</h3>
+                    <p class="product-description">Advanced formula that stimulates collagen production for firmer, plumper skin.</p>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">Product Image</div>
+                <div class="product-info">
+                    <h3 class="product-name">Pink Lemon Protective Day Lotion</h3>
+                    <p class="product-description">Daily moisturizer with SPF protection that hydrates while shielding from environmental damage.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="whatsapp-section">
+            <h2 class="whatsapp-title">Interested in Our Products?</h2>
+            <p>Contact us directly on WhatsApp for more information or to place an order</p>
+            <a href="https://wa.me/256758958268?text=Hello!%20I'm%20interested%20in%20Pink%20Lemon%20skincare%20products." class="whatsapp-button" target="_blank">
+                Contact Us on WhatsApp
+            </a>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>© 2025 Pink Lemon Skincare. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
